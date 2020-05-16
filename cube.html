@@ -8,10 +8,22 @@
 	</head>
 	<body>
 		<script src="three.min.js"></script>
-    <script src="GLTFLoader.js"></script>
+    <script src="loaders/GLTFLoader.js"></script>
 		<script>
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+      var loader = new THREE.GLTFLoader();
+
+loader.load( 'objects/daffodil.glb', function ( gltf ) {
+
+	scene.add( gltf.scene );
+
+}, undefined, function ( error ) {
+
+	console.error( error );
+
+} );
 
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
@@ -27,7 +39,7 @@
 			var animate = function () {
 				requestAnimationFrame( animate );
 
-				cube.rotation.x += 0.01;
+				cube.rotation.x += 0.0;
 				cube.rotation.y += 0.01;
 
 				renderer.render( scene, camera );
@@ -35,17 +47,7 @@
 
 			animate();
 
-      var loader = new THREE.GLTFLoader();
 
-loader.load( 'daffodil.glb', function ( gltf ) {
-
-	scene.add( gltf.scene );
-
-}, undefined, function ( error ) {
-
-	console.error( error );
-
-} );
 
 		</script>
 	</body>
