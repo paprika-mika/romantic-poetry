@@ -9,7 +9,7 @@ import {
 	RepeatWrapping,
 	TextureLoader,
 	Vector2
-} from "three.module.js"; 
+} from "loaders/three.module.js"; 
 
 var MTLLoader = function ( manager ) {
 
