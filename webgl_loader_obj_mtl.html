@@ -14,11 +14,11 @@
 
 		<script type="module">
 
-			import * as THREE from '../build/three.module.js';
+			import * as THREE from 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/three.module.js';
 
-			import { DDSLoader } from 'DDSLoader.js';
-			import { MTLLoader } from 'MTLLoader.js';
-			import { OBJLoader } from 'OBJLoader.js';
+			import { DDSLoader } from 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/loaders/DDSLoader.js';
+			import { MTLLoader } from 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/loaders/MTLLoader.js';
+			import { OBJLoader } from 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/loaders/OBJLoader.js';
 
 
 			var container;
@@ -76,14 +76,14 @@
 				// manager.addHandler( /\.tga$/i, new TGALoader() );
 
 				new MTLLoader( manager )
-					.setPath( '' )
+					.setPath( 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/objects/' )
 					.load( 'brench.mtl', function ( materials ) {
 
 						materials.preload();
 
 						new OBJLoader( manager )
 							.setMaterials( materials )
-							.setPath( '' )
+							.setPath( 'https://raw.githubusercontent.com/paprika-mika/romantic-poetry/master/objects/' )
 							.load( 'brench.obj', function ( object ) {
 
 								object.position.y = - 95;
