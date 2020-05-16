@@ -1,7 +1,3 @@
-/**
- * @author mrdoob / http://mrdoob.com/
- */
-
 import {
 	BufferGeometry,
 	FileLoader,
@@ -15,7 +11,7 @@ import {
 	MeshPhongMaterial,
 	Points,
 	PointsMaterial
-} from "../../../build/three.module.js";
+} from "three.module.js";
 
 var OBJLoader = ( function () {
 
