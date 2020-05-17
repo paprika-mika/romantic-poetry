@@ -1,0 +1,214 @@
+html{
+scroll-behavior: smooth;
+}
+
+:root {
+    --font-size-s: 15pt;
+    --font-size-m: 30pt;
+    --font-size-l: 60pt;
+    --font-size-xl: 60pt;
+    --line-height1: 20pt;
+    --yellow-full: rgb(255, 79, 251);
+    --white-full: rgb(255, 255, 255);
+    --black-full: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.header{
+  background-color: black;
+  height: 90vh;
+  width: 100vw;
+}
+
+.header > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 90%;
+ }
+
+.text{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-s);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.underheader{
+  background-color: black;
+  height: 10vh;
+  width: 50vw;
+  float: left;
+}
+
+.header-poem{
+
+  width: 100vw;
+  height:auto;
+
+}
+
+.menu{
+  width: 90%;
+  position: fixed;
+  list-style-type: none;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-s);
+  z-index: 20;
+  top:25px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+.menu > a{
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: inline-flex;
+  color: white;
+  text-align: justify;
+  padding: 20px;
+
+  font-size: var(--font-size-s);
+
+
+}
+
+
+
+.poem{
+  width: 80vw;
+
+  background-color: blue;
+  width: 80vw;
+margin: auto;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+}
+
+
+.row{
+  width: 48%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+
+
+.title{
+  padding: 10%;
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-l);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 255);
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  background-color: yellow;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.subtitle-box{
+  position: fixed;
+  z-index: 10;
+  width: 50%;
+  height: 300px;
+  bottom: 150px;
+  left: 200px;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.subtitles{
+  position: relative;
+  text-align: left;
+  color: yellow;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-m);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 120s linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes crawl {
+	0% {
+    top: -100px;
+
+  }
+	100% {
+    top: -6000px;
+
+  }
+}
+
+
+
+
+
+.property {
+    width: 50vw;
+
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: ew-resize;
+    justify-content: center;
+}
