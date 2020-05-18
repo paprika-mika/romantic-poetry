@@ -19,6 +19,11 @@ $(document).ready(function() {
 
           $("#subtitle-1").removeClass("subtitle-no").addClass("subtitle-box");
           $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "running"});
+          $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "paused"});
+          $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "paused"});
+          $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
+          $("#subtitle-5 > .craw4l").css({"-webkit-animation-play-state": "paused"});
+          $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
       });
 
       $('#pause1').click(function() {
@@ -49,7 +54,13 @@ $(document).ready(function() {
         }
 
         $("#subtitle-2").removeClass("subtitle-no").addClass("subtitle-box");
+        $("#subtitle-1").removeClass("subtitle-no").addClass("subtitle-box");
+        $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "paused"});
         $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "running"});
+        $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "paused"});
+        $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
+        $("#subtitle-5 > .craw4l").css({"-webkit-animation-play-state": "paused"});
+        $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
     });
 
     $('#pause2').click(function() {
@@ -81,7 +92,12 @@ $(document).ready(function() {
       }
 
       $("#subtitle-3").removeClass("subtitle-no").addClass("subtitle-box");
+      $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "paused"});
       $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-5 > .craw4l").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
   });
 
 
@@ -111,12 +127,17 @@ $(document).ready(function() {
       }
 
       $("#subtitle-4").removeClass("subtitle-no").addClass("subtitle-box");
-      $("#subtitle-4 > .crawl").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-5 > .craw4l").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
   });
 
     $('#pause4').click(function() {
       audioElement4.pause();
-      $("#subtitle-4 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
       $("#subtitle-4").removeClass("subtitle-box").addClass("subtitle-no");
     });
 
@@ -141,12 +162,18 @@ $(document).ready(function() {
       }
 
       $("#subtitle-5").removeClass("subtitle-no").addClass("subtitle-box");
-      $("#subtitle-5 > .crawl").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-5 > .crawl4").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
+
   });
 
     $('#pause5').click(function() {
       audioElement5.pause();
-      $("#subtitle-5 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-5 > .crawl4").css({"-webkit-animation-play-state": "paused"});
       $("#subtitle-5").removeClass("subtitle-box").addClass("subtitle-no");
     });
 
@@ -170,13 +197,19 @@ $(document).ready(function() {
       }
 
       $("#subtitle-6").removeClass("subtitle-no").addClass("subtitle-box");
-      $("#subtitle-6 > .crawl").css({"-webkit-animation-play-state": "running"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "running"});
   });
 
     $('#pause6').click(function() {
       audioElement6.pause();
-      $("#subtitle-6 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "paused"});
       $("#subtitle-6").removeClass("subtitle-box").addClass("subtitle-no");
+      $("#subtitle-1 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-3 > .crawl2").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-4 > .crawl3").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-5 > .craw4l").css({"-webkit-animation-play-state": "paused"});
+      $("#subtitle-6 > .crawl5").css({"-webkit-animation-play-state": "running"});
     });
 
 
@@ -208,6 +241,15 @@ $(document).ready(function() {
             $("#subtitle-2 > .crawl").css({"-webkit-animation-play-state": "running"});
 
           });
+
+
+
+
+
+
+
+
+
 
 
 
