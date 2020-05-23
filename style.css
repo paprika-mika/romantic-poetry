@@ -29,16 +29,30 @@ body {
 .header{
   background-color: black;
   height: 90vh;
-  width: 80vw;
+  width: 100vw;
   top:50px;
 }
 
-.header > img{
-  display: block;
+.titleimage{
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  height: 90%;
+  width: 100%;
+  animation-name: yes;
+
+  animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+ }
+
+ @keyframes yes{
+   0%   {top:0px;}
+
+   50%  {top:20px;}
+
+   100% {top:0px;}
  }
 
 .text{
@@ -52,7 +66,12 @@ body {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  text-decoration: none;
 
+}
+
+.text:hover{
+  text-decoration: underline;
 }
 
 .underheader{
@@ -137,15 +156,42 @@ body {
 }
 
 .poem-originals{
+  position: fixed;
+  height: 80%;
+  width: 30%;
+  background-color: black;
+  z-index: 60;
 
-  width: 60vw;
-  margin-top: 50px;
-  margin: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  overflow: scroll;
+  top: 10px;
+  right: 10px;
+  cursor: grab;
 
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 255);
+  border-width: 1.5px;
+
+  visibility: visible;
+  padding: 10px;
+}
+
+.poem-originals-none{
+  position: fixed;
+  height: 80%;
+  width: 30%;
+  background-color: black;
+  z-index: 60;
+  top: 0px;
+  left: 0px;
+  overflow: scroll;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 255);
+  border-width: 1.5px;
+
+  visibility: hidden;
 }
 
 
@@ -265,6 +311,27 @@ body {
   -webkit-text-fill-color: rgb(0, 0, 255);
 }
 
+.smalltext2{
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-s);
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  letter-spacing: 0px;
+
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0, 0);
+  -webkit-text-fill-color: rgb(0, 0, 255);
+}
+
 
 
 .subtitle-box{
@@ -273,7 +340,7 @@ body {
   border-top: 1.5px solid white;
 
   position: fixed;
-  z-index: 10;
+
   width: 50%;
   height: 150px;
 
@@ -284,7 +351,7 @@ body {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0%);
-  z-index: 50;
+  z-index: 70;
   pointer-events: none;
 }
 
@@ -461,13 +528,21 @@ body {
 }
 
 .cross{
-  width: 30px;
-  height: 30px;
-  position: fixed;
+
+  width: 20px;
+  height: 20px;
+  position: sticky;
   background-color: yellow;
 
+  z-index: 65;
+
+  top: 5px;
+  right: 5px;
+
+  border-radius: 50%;
+
   border-style: solid;
-  border-color: white;
+  border-color: rgb(0, 0, 255);
   border-width: 1.5px;
 }
 

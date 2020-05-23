@@ -244,6 +244,15 @@ $(document).ready(function() {
 
 
 
+          $("#original1trigger, #original2trigger, #original3trigger, #original4trigger, #original5trigger, #original6trigger, .cross").click(function(){
+            if ($("#box").hasClass("poem-originals-none")) {
+           $("#box").removeClass("poem-originals-none").addClass("poem-originals");}
+           else {
+          $("#box").removeClass("poem-originals").addClass("poem-originals-none");}
+          });
+
+
+
 
 
 
@@ -255,3 +264,11 @@ $(document).ready(function() {
 
 
 });
+
+$( function() {
+      $( "#box" ).draggable();
+
+
+
+      $( "" ).disableSelection();
+} );
